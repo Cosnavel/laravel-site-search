@@ -5,7 +5,6 @@ namespace Cosnavel\SiteSearch\Commands;
 use Illuminate\Console\Command;
 use Cosnavel\SiteSearch\Jobs\CrawlSiteJob;
 use Cosnavel\SiteSearch\Models\SiteSearchConfig;
-use function Spatie\SiteSearch\Commands\dispatch;
 
 class CrawlCommand extends Command
 {
