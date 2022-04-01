@@ -13,9 +13,6 @@ use Cosnavel\SiteSearch\Events\IndexingStartedEvent;
 use Cosnavel\SiteSearch\Events\NewIndexCreatedEvent;
 use Cosnavel\SiteSearch\Models\SiteSearchConfig;
 use Cosnavel\SiteSearch\SiteSearch;
-use function Spatie\SiteSearch\Jobs\collect;
-use function Spatie\SiteSearch\Jobs\event;
-use function Spatie\SiteSearch\Jobs\now;
 
 class CrawlSiteJob implements ShouldQueue
 {

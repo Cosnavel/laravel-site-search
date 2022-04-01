@@ -11,7 +11,6 @@ use MeiliSearch\Exceptions\ApiException;
 use Cosnavel\SiteSearch\Models\SiteSearchConfig;
 use Cosnavel\SiteSearch\SearchResults\Hit;
 use Cosnavel\SiteSearch\SearchResults\SearchResults;
-use function Spatie\SiteSearch\Drivers\collect;
 
 class MeiliSearchDriver implements Driver
 {

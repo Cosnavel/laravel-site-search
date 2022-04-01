@@ -7,7 +7,6 @@ use Psr\Http\Message\UriInterface;
 use Spatie\Crawler\Crawler;
 use Cosnavel\SiteSearch\Indexers\Indexer;
 use Cosnavel\SiteSearch\Profiles\SearchProfile;
-use function Spatie\SiteSearch\Profiles\config;
 
 class DefaultSearchProfile implements SearchProfile
 {

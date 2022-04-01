@@ -10,8 +10,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Cosnavel\SiteSearch\Drivers\Driver;
 use Cosnavel\SiteSearch\Profiles\SearchProfile;
-use function Spatie\SiteSearch\Models\app;
-use function Spatie\SiteSearch\Models\config;
 
 class SiteSearchConfig extends Model
 {

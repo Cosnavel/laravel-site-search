@@ -7,9 +7,6 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
 use Cosnavel\SiteSearch\Indexers\Indexer;
 use Symfony\Component\DomCrawler\Crawler;
-use function attempt;
-use function Spatie\SiteSearch\Indexers\config;
-use function Spatie\SiteSearch\Indexers\now;
 
 class DefaultIndexer implements Indexer
 {

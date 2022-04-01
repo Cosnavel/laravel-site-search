@@ -11,8 +11,6 @@ use Cosnavel\SiteSearch\Drivers\Driver;
 use Cosnavel\SiteSearch\Events\FailedToCrawlUrlEvent;
 use Cosnavel\SiteSearch\Events\IndexedUrlEvent;
 use Cosnavel\SiteSearch\Profiles\SearchProfile;
-use function Cosnavel\SiteSearch\Crawler\collect;
-use function Cosnavel\SiteSearch\Crawler\event;
 
 class SearchProfileCrawlObserver extends CrawlObserver
 {

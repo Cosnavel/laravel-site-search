@@ -3,7 +3,6 @@
 namespace Cosnavel\SiteSearch\SearchResults;
 
 use Carbon\Carbon;
-use function Spatie\SiteSearch\SearchResults\collect;
 
 class Hit
 {
