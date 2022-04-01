@@ -22,7 +22,7 @@ php artisan site-search:crawl
 Finally, you can use the `Search` class to perform a query on your index.
 
 ```php
-use Spatie\SiteSearch\Search;
+use Cosnavel\SiteSearch\Search;
 
 $searchResults = Search::onIndex($indexName)
     ->query('your query')

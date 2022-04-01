@@ -2,7 +2,7 @@
 
 namespace Tests\TestSupport\TestClasses\Indexers;
 
-use Spatie\SiteSearch\Indexers\DefaultIndexer;
+use Cosnavel\SiteSearch\Indexers\DefaultIndexer;
 
 class IndexerWithExtraInfo extends DefaultIndexer
 {

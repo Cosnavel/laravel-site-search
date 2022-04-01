@@ -3,7 +3,7 @@
 namespace Tests\TestSupport\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
 
 class SiteSearchConfigFactory extends Factory
 {

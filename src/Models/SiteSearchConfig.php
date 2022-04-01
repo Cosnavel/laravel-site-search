@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SiteSearch\Models;
+namespace Cosnavel\SiteSearch\Models;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Spatie\SiteSearch\Drivers\Driver;
-use Spatie\SiteSearch\Profiles\SearchProfile;
+use Cosnavel\SiteSearch\Drivers\Driver;
+use Cosnavel\SiteSearch\Profiles\SearchProfile;
+use function Spatie\SiteSearch\Models\app;
+use function Spatie\SiteSearch\Models\config;
 
 class SiteSearchConfig extends Model
 {
@@ -40,7 +42,7 @@ class SiteSearchConfig extends Model
 
     public function getDriver(): Driver
     {
-        /** @var \Spatie\SiteSearch\Drivers\Driver $driverClass */
+        /** @var \Cosnavel\SiteSearch\Drivers\Driver $driverClass */
         $driverClass = $this->driver_class ?? config('site-search.default_driver');
 
         return $driverClass::make($this);

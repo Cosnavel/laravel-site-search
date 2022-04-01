@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SiteSearch\Events;
+namespace Cosnavel\SiteSearch\Events;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;

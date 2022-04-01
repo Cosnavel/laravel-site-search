@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SiteSearch\Indexers;
+namespace Cosnavel\SiteSearch\Indexers;
 
 use Carbon\CarbonInterface;
 use Psr\Http\Message\UriInterface;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\SiteSearch\Drivers;
+namespace Cosnavel\SiteSearch\Drivers;
 
-use Spatie\SiteSearch\Models\SiteSearchConfig;
-use Spatie\SiteSearch\SearchResults\SearchResults;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\SearchResults\SearchResults;
 
 interface Driver
 {

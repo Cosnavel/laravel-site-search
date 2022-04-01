@@ -3,7 +3,7 @@
 namespace Tests\TestSupport\TestClasses\Indexers;
 
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Indexers\DefaultIndexer;
+use Cosnavel\SiteSearch\Indexers\DefaultIndexer;
 
 class IndexerWithModifiedUrl extends DefaultIndexer
 {

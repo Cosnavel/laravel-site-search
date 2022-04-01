@@ -3,7 +3,7 @@
 namespace Tests\TestSupport\TestClasses\SearchProfiles;
 
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Profiles\DefaultSearchProfile;
+use Cosnavel\SiteSearch\Profiles\DefaultSearchProfile;
 
 class DoNotCrawlSecondLinkSearchProfile extends DefaultSearchProfile
 {

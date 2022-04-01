@@ -10,7 +10,7 @@ You can retrieve results from an index using `Spatie\SiteSearch\Search`.
 Here's how you can retrieve all results from an index named `my-index`.
 
 ```php
-use Spatie\SiteSearch\Search;
+use Cosnavel\SiteSearch\Search;
 
 $searchResults = Search::onIndex('my-index')
     ->query('your query')
@@ -22,7 +22,7 @@ $searchResults = Search::onIndex('my-index')
 You can limit the amount of results using the `limit` function.
 
 ```php
-use Spatie\SiteSearch\Search;
+use Cosnavel\SiteSearch\Search;
 
 $searchResults = Search::onIndex('my-index')
     ->query('your query')
@@ -35,7 +35,7 @@ $searchResults = Search::onIndex('my-index')
 You can paginate results using by calling `paginate`.
 
 ```php
-use Spatie\SiteSearch\Search;
+use Cosnavel\SiteSearch\Search;
 
 $searchResults = Search::onIndex('my-index')
     ->query('your query')

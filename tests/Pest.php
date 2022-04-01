@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Pagination\Paginator;
-use Spatie\SiteSearch\Drivers\MeiliSearchDriver;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
-use Spatie\SiteSearch\SearchResults\Hit;
-use Spatie\SiteSearch\SearchResults\SearchResults;
+use Cosnavel\SiteSearch\Drivers\MeiliSearchDriver;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\SearchResults\Hit;
+use Cosnavel\SiteSearch\SearchResults\SearchResults;
 use Tests\TestSupport\TestCase;
 
 uses(TestCase::class)

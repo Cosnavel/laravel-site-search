@@ -1,10 +1,11 @@
 <?php
 
-namespace Spatie\SiteSearch;
+namespace Cosnavel\SiteSearch;
 
 use Illuminate\Pagination\Paginator;
-use Spatie\SiteSearch\Exceptions\NoQuerySet;
-use Spatie\SiteSearch\SearchResults\SearchResults;
+use Cosnavel\SiteSearch\Exceptions\NoQuerySet;
+use Cosnavel\SiteSearch\SearchResults\SearchResults;
+use Cosnavel\SiteSearch\SiteSearch;
 
 class Search
 {

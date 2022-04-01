@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Pagination\Paginator;
-use Spatie\SiteSearch\Jobs\CrawlSiteJob;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
-use Spatie\SiteSearch\Search;
+use Cosnavel\SiteSearch\Jobs\CrawlSiteJob;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\Search;
 use Tests\TestSupport\Server\Server;
 use Tests\TestSupport\TestClasses\SearchProfiles\DoNotCrawlSecondLinkSearchProfile;
 use Tests\TestSupport\TestClasses\SearchProfiles\DoNotIndexSecondLinkSearchProfile;
@@ -29,7 +29,7 @@ it('can crawl a site', function () {
 
     expect($searchResults->hits)->toHaveCount(1);
 
-    /** @var \Spatie\SiteSearch\SearchResults\Hit $hit */
+    /** @var \Cosnavel\SiteSearch\SearchResults\Hit $hit */
     $hit = $searchResults->hits[0];
 
     expect($hit)

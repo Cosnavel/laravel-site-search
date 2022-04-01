@@ -1,16 +1,18 @@
 <?php
 
-namespace Spatie\SiteSearch\Crawler;
+namespace Cosnavel\SiteSearch\Crawler;
 
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Str;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
 use Spatie\Crawler\CrawlObservers\CrawlObserver;
-use Spatie\SiteSearch\Drivers\Driver;
-use Spatie\SiteSearch\Events\FailedToCrawlUrlEvent;
-use Spatie\SiteSearch\Events\IndexedUrlEvent;
-use Spatie\SiteSearch\Profiles\SearchProfile;
+use Cosnavel\SiteSearch\Drivers\Driver;
+use Cosnavel\SiteSearch\Events\FailedToCrawlUrlEvent;
+use Cosnavel\SiteSearch\Events\IndexedUrlEvent;
+use Cosnavel\SiteSearch\Profiles\SearchProfile;
+use function Cosnavel\SiteSearch\Crawler\collect;
+use function Cosnavel\SiteSearch\Crawler\event;
 
 class SearchProfileCrawlObserver extends CrawlObserver
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\SiteSearch\Profiles;
+namespace Cosnavel\SiteSearch\Profiles;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
 use Spatie\Crawler\Crawler;
-use Spatie\SiteSearch\Indexers\Indexer;
+use Cosnavel\SiteSearch\Indexers\Indexer;
 
 interface SearchProfile
 {

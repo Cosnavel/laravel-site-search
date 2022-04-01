@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\SiteSearch\Events;
+namespace Cosnavel\SiteSearch\Events;
 
-use Spatie\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
 
 class IndexingStartedEvent
 {

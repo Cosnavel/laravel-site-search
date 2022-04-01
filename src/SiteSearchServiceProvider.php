@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\SiteSearch;
+namespace Cosnavel\SiteSearch;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\SiteSearch\Commands\CrawlCommand;
-use Spatie\SiteSearch\Commands\CreateSearchConfigCommand;
-use Spatie\SiteSearch\Commands\ListCommand;
+use Cosnavel\SiteSearch\Commands\CrawlCommand;
+use Cosnavel\SiteSearch\Commands\CreateSearchConfigCommand;
+use Cosnavel\SiteSearch\Commands\ListCommand;
 
 class SiteSearchServiceProvider extends PackageServiceProvider
 {

@@ -1,17 +1,21 @@
 {
-    "name": "spatie/laravel-site-search",
+    "name": "cosnavel/laravel-site-search",
     "description": "A site search engine",
     "keywords": [
-        "spatie",
         "laravel",
         "laravel-site-search"
     ],
-    "homepage": "https://github.com/spatie/laravel-site-search",
+    "homepage": "https://github.com/cosnavel/laravel-site-search",
     "license": "MIT",
     "authors": [
         {
             "name": "freek",
             "email": "freek@spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Cosnavel",
+            "email": "niclasdevelop@gmail.com",
             "role": "Developer"
         }
     ],
@@ -39,8 +43,8 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Spatie\\SiteSearch\\": "src",
-            "Spatie\\SiteSearch\\Database\\Factories\\": "database/factories"
+            "Cosnavel\\SiteSearch\\": "src",
+            "Cosnavel\\SiteSearch\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
@@ -62,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\SiteSearch\\SiteSearchServiceProvider"
+                "Cosnavel\\SiteSearch\\SiteSearchServiceProvider"
             ],
             "aliases": {
-                "SiteSearch": "Spatie\\SiteSearch\\SiteSearchFacade"
+                "SiteSearch": "Cosnavel\\SiteSearch\\SiteSearchFacade"
             }
         }
     },

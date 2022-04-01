@@ -2,7 +2,7 @@
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Uri;
-use Spatie\SiteSearch\Indexers\DefaultIndexer;
+use Cosnavel\SiteSearch\Indexers\DefaultIndexer;
 
 it('can index a page', function () {
     $indexer = new DefaultIndexer(

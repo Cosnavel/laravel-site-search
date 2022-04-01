@@ -1,18 +1,21 @@
 <?php
 
-namespace Spatie\SiteSearch\Jobs;
+namespace Cosnavel\SiteSearch\Jobs;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Event;
-use Spatie\SiteSearch\Events\IndexedUrlEvent;
-use Spatie\SiteSearch\Events\IndexingEndedEvent;
-use Spatie\SiteSearch\Events\IndexingStartedEvent;
-use Spatie\SiteSearch\Events\NewIndexCreatedEvent;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
-use Spatie\SiteSearch\SiteSearch;
+use Cosnavel\SiteSearch\Events\IndexedUrlEvent;
+use Cosnavel\SiteSearch\Events\IndexingEndedEvent;
+use Cosnavel\SiteSearch\Events\IndexingStartedEvent;
+use Cosnavel\SiteSearch\Events\NewIndexCreatedEvent;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\SiteSearch;
+use function Spatie\SiteSearch\Jobs\collect;
+use function Spatie\SiteSearch\Jobs\event;
+use function Spatie\SiteSearch\Jobs\now;
 
 class CrawlSiteJob implements ShouldQueue
 {

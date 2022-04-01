@@ -23,7 +23,7 @@ namespace Spatie\SiteSearch\Profiles;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Indexers\Indexer;
+use Cosnavel\SiteSearch\Indexers\Indexer;
 
 interface SearchProfile
 {

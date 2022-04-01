@@ -1,15 +1,17 @@
 <?php
 
-namespace Spatie\SiteSearch\Drivers;
+namespace Cosnavel\SiteSearch\Drivers;
 
+use Cosnavel\SiteSearch\Drivers\Driver;
 use Exception;
 use MeiliSearch\Client;
 use MeiliSearch\Client as MeiliSearchClient;
 use MeiliSearch\Endpoints\Indexes;
 use MeiliSearch\Exceptions\ApiException;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
-use Spatie\SiteSearch\SearchResults\Hit;
-use Spatie\SiteSearch\SearchResults\SearchResults;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\SearchResults\Hit;
+use Cosnavel\SiteSearch\SearchResults\SearchResults;
+use function Spatie\SiteSearch\Drivers\collect;
 
 class MeiliSearchDriver implements Driver
 {
@@ -19,7 +21,7 @@ class MeiliSearchDriver implements Driver
 
         $apiKey = $config->getExtraValue('meilisearch.apiKey');
 
-        $client = new Client($url, $apiKey);
+        $client = new MeiliSearchClient($url, $apiKey);
 
         $settings = $config->getExtraValue('meilisearch.indexSettings', []);
 

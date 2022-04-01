@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Bus;
 use function Pest\Laravel\artisan;
-use Spatie\SiteSearch\Commands\CrawlCommand;
-use Spatie\SiteSearch\Jobs\CrawlSiteJob;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\Commands\CrawlCommand;
+use Cosnavel\SiteSearch\Jobs\CrawlSiteJob;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
 use Symfony\Component\Console\Command\Command;
 
 beforeEach(function () {

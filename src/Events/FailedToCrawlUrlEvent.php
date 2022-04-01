@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SiteSearch\Events;
+namespace Cosnavel\SiteSearch\Events;
 
 use GuzzleHttp\Exception\RequestException;
 use Psr\Http\Message\UriInterface;

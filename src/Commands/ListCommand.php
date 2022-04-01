@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SiteSearch\Commands;
+namespace Cosnavel\SiteSearch\Commands;
 
 use Illuminate\Console\Command;
 use MeiliSearch\Exceptions\ApiException;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
 
 class ListCommand extends Command
 {

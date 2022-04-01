@@ -4,7 +4,7 @@ namespace Tests\TestSupport\TestClasses\SearchProfiles;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Profiles\DefaultSearchProfile;
+use Cosnavel\SiteSearch\Profiles\DefaultSearchProfile;
 
 class DoNotIndexSecondLinkSearchProfile extends DefaultSearchProfile
 {

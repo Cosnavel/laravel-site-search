@@ -4,8 +4,8 @@ namespace Tests\TestSupport\TestClasses\SearchProfiles;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Indexers\Indexer;
-use Spatie\SiteSearch\Profiles\DefaultSearchProfile;
+use Cosnavel\SiteSearch\Indexers\Indexer;
+use Cosnavel\SiteSearch\Profiles\DefaultSearchProfile;
 use Tests\TestSupport\TestClasses\Indexers\IndexerWithModifiedUrl;
 
 class ModifyUrlSearchProfile extends DefaultSearchProfile

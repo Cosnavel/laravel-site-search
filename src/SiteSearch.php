@@ -1,15 +1,16 @@
 <?php
 
-namespace Spatie\SiteSearch;
+namespace Cosnavel\SiteSearch;
 
 use Spatie\Crawler\Crawler;
-use Spatie\SiteSearch\Crawler\SearchProfileCrawlObserver;
-use Spatie\SiteSearch\Crawler\SiteSearchCrawlProfile;
-use Spatie\SiteSearch\Drivers\Driver;
-use Spatie\SiteSearch\Exceptions\SiteSearchIndexDoesNotExist;
-use Spatie\SiteSearch\Models\SiteSearchConfig;
-use Spatie\SiteSearch\Profiles\SearchProfile;
-use Spatie\SiteSearch\SearchResults\SearchResults;
+use GuzzleHttp\Cookie\CookieJar;
+use Cosnavel\SiteSearch\Drivers\Driver;
+use Cosnavel\SiteSearch\Profiles\SearchProfile;
+use Cosnavel\SiteSearch\Models\SiteSearchConfig;
+use Cosnavel\SiteSearch\SearchResults\SearchResults;
+use Cosnavel\SiteSearch\Crawler\SiteSearchCrawlProfile;
+use Cosnavel\SiteSearch\Crawler\SearchProfileCrawlObserver;
+use Cosnavel\SiteSearch\Exceptions\SiteSearchIndexDoesNotExist;
 
 class SiteSearch
 {
@@ -50,8 +51,30 @@ class SiteSearch
             $this->driver
         );
 
-        $crawler = Crawler::create()
-            ->setCrawlProfile($crawlProfile)
+        if (config('site-search.crawler_auth_url') && config('site-search.crawler_auth_secret')) {
+            $jar = new CookieJar();
+            $client = new \GuzzleHttp\Client(['cookies' => true]);
+            $client->request(
+                'POST',
+                config('site-search.crawler_auth_url'),
+                [
+                                'json' => [
+                                    'secret' => config('site-search.crawler_auth_secret'),
+                                ],
+                                'headers'  => [
+                                    'Accept' => 'application/json',
+                                    'Content-Type' => 'application/json',
+                                ],
+                                'cookies' => $jar
+                            ]
+            );
+            $crawler = Crawler::create(['cookies' => $jar]);
+        } else {
+            $crawler = Crawler::create();
+        }
+
+
+        $crawler->setCrawlProfile($crawlProfile)
             ->setCrawlObserver($observer);
 
         $this->searchProfile->configureCrawler($crawler);

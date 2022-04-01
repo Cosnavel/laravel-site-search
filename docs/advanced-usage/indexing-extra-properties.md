@@ -8,7 +8,7 @@ By default, only the page title, URL, description, and some content are added to
 You do this by using [a custom indexer](/docs/laravel-site-search/v1/advanced-usage/using-a-custom-indexer) and override the `extra` method.
 
 ```php
-class YourIndexer extends Spatie\SiteSearch\Indexers\DefaultIndexer
+class YourIndexer extends \Cosnavel\SiteSearch\Indexers\DefaultIndexer
 {
     public function extra() : array{
         return [

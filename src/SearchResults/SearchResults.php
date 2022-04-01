@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SiteSearch\SearchResults;
+namespace Cosnavel\SiteSearch\SearchResults;
 
 use Illuminate\Support\Collection;
 

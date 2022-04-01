@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SiteSearch\Exceptions;
+namespace Cosnavel\SiteSearch\Exceptions;
 
 use Exception;
 

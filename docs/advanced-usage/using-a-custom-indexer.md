@@ -63,7 +63,7 @@ interface Indexer
 In most cases, it's probably the easiest to extend the `DefaultIndexer`
 
 ```php
-class YourIndexer extends Spatie\SiteSearch\Indexers\DefaultIndexer
+class YourIndexer extends \Cosnavel\SiteSearch\Indexers\DefaultIndexer
 {
     // override the desired method
 }
@@ -77,7 +77,7 @@ Here's an example of a custom indexer [used at freek.dev](https://github.com/spa
 
 namespace App\Services\Search;
 
-use Spatie\SiteSearch\Indexers\DefaultIndexer;
+use Cosnavel\SiteSearch\Indexers\DefaultIndexer;
 
 class Indexer extends DefaultIndexer
 {
@@ -99,7 +99,7 @@ Here's an example of a custom indexer to strip away the query parameters from th
 namespace App\Services\Search;
 
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Indexers\DefaultIndexer;
+use Cosnavel\SiteSearch\Indexers\DefaultIndexer;
 
 class Indexer extends DefaultIndexer
 {
@@ -118,7 +118,7 @@ namespace App\Services\Search;
 
 use GuzzleHttp\Psr7\Uri;
 use Psr\Http\Message\UriInterface;
-use Spatie\SiteSearch\Indexers\DefaultIndexer;
+use Cosnavel\SiteSearch\Indexers\DefaultIndexer;
 
 class Indexer extends DefaultIndexer
 {

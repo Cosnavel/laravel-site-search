@@ -33,7 +33,7 @@ In the example below, we schedule to run the command every three hours, but you 
 
 ```php
 // in app/Console/Kernel.php
-use Spatie\SiteSearch\Commands\CrawlCommand;
+use Cosnavel\SiteSearch\Commands\CrawlCommand;
 
 protected function schedule(Schedule $schedule)
 {
@@ -107,7 +107,7 @@ return [
      * This profile will be used when none is specified in the `profile_class` attribute
      * of a `SiteSearchIndex` model.
      */
-    'default_profile' => Spatie\SiteSearch\Profiles\DefaultSearchProfile::class,
+    'default_profile' => \Cosnavel\SiteSearch\Profiles\DefaultSearchProfile::class,
 
     /*
      * An indexer is a class that is responsible for converting the content of a page
@@ -116,13 +116,13 @@ return [
      * This indexer will be used when none is specified in the `profile_class` attribute
      * of a `SiteSearchIndex` model.
      */
-    'default_indexer' => Spatie\SiteSearch\Indexers\DefaultIndexer::class,
+    'default_indexer' => \Cosnavel\SiteSearch\Indexers\DefaultIndexer::class,
 
     /*
      * A driver is responsible for writing all scraped content
      * to a search index.
      */
-    'default_driver' =>  Spatie\SiteSearch\Drivers\MeiliSearchDriver::class,
+    'default_driver' =>  \Cosnavel\SiteSearch\Drivers\MeiliSearchDriver::class,
 ];
 ```
 

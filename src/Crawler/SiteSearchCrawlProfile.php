@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SiteSearch\Crawler;
+namespace Cosnavel\SiteSearch\Crawler;
 
 use Psr\Http\Message\UriInterface;
 use Spatie\Crawler\CrawlProfiles\CrawlInternalUrls;
-use Spatie\SiteSearch\Profiles\SearchProfile;
+use Cosnavel\SiteSearch\Profiles\SearchProfile;
 
 class SiteSearchCrawlProfile extends CrawlInternalUrls
 {
